@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+body { 
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center; 
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #8a2be2;
+	font-weight: 500;
+	text-transform: uppercase;
+	position: relative;
+}
+
+a + a {
+	margin-left: 2rem;
+}
+
+a:after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: #6718b1;
+	left: 0;
+	bottom: -10px;
+	border-radius: 50%;
+	opacity: 0;
+	transition: 0.4s;
+}
+
+a:hover:after {
+	left: 50%;
+	opacity: 1;
+}
+	</style>
+</head>
+<body>
+	<menu class="menu">
+		<a href="">Menu</a>
+		<a href="">About</a>
+		<a href="">Portfolio</a>
+		<a href="">Contact</a>
+	</menu>
+</body>
+</html>
+<menu> 
